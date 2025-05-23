@@ -68,6 +68,42 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 3. Configura la base de datos en application.properties.
 4. Ejecuta la clase App para iniciar la aplicación.
 5. Usa herramientas como Postman o cURL para interactuar con los endpoints.
+### Ejemplos de JSON para solicitudes POST
+
+#### Crear un Hotel
+```json
+{
+  "id": 1,
+  "nombre": "Hotel Paradise",
+  "categoria": "5 estrellas",
+  "precio": 150.00,
+  "disponibilidad": true
+}
+```
+#### Crear un Vuelo
+```json
+{
+  "id": 1,
+  "compania": "Airways International",
+  "fecha": "2023-12-25T10:00:00",
+  "precio": 300.00,
+  "plazasDisponibles": 50
+}
+```
+#### Crear una Reserva
+```json
+{
+  "id": 1,
+  "usuario": "Juan Pérez",
+  "dni": "12345678A",
+  "vueloAsociado": {
+    "id": 1
+  },
+  "hotelAsociado": {
+    "id": 1
+  }
+}
+```
 ### Notas
 - El archivo SQL crea las tablas necesarias si no existen.
 - Hibernate sincroniza automáticamente las entidades con la base de datos.
