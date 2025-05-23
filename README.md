@@ -69,12 +69,12 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 4. Ejecuta la clase App para iniciar la aplicación.
 5. Usa herramientas como Postman o cURL para interactuar con los endpoints.
 ### Notas
-El archivo SQL crea las tablas necesarias si no existen.
-Hibernate sincroniza automáticamente las entidades con la base de datos.
-Asegúrate de que los IDs de hoteles y vuelos existan antes de crear una reserva.
+- El archivo SQL crea las tablas necesarias si no existen.
+- Hibernate sincroniza automáticamente las entidades con la base de datos.
+- Asegúrate de que los IDs de hoteles y vuelos existan antes de crear una reserva.
 ### Tecnologías Utilizadas
-Java 17
-Spring Boot
-Hibernate
-MySQL
-Maven
+- Java 17
+- Spring Boot
+- Hibernate
+- MySQL
+- Maven
