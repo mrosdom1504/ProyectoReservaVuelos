@@ -1,7 +1,6 @@
-drop database if exists agencia;
-create database agencia;
+create database if not exists agencia;
 use agencia;
-CREATE TABLE hotel (
+CREATE TABLE if not exists hotel (
 
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
 
@@ -17,7 +16,7 @@ CREATE TABLE hotel (
 
 
 
-CREATE TABLE vuelo (
+CREATE TABLE if not exists vuelo (
 
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
 
@@ -33,7 +32,7 @@ CREATE TABLE vuelo (
 
 
 
-CREATE TABLE reserva (
+CREATE TABLE if not exists reserva (
 
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
 
@@ -45,8 +44,8 @@ CREATE TABLE reserva (
 
     hotel_asociado BIGINT,
 
-    FOREIGN KEY (vuelo_asociado) REFERENCES vuelo(id),
-
+    FOREIGN KEY (vuelo_asociado) REFERENCES vuelo(id)
+    ON DELETE CASCADE,
     FOREIGN KEY (hotel_asociado) REFERENCES hotel(id)
-
+    ON DELETE CASCADE
 );
