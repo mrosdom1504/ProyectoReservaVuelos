@@ -46,23 +46,23 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
-### Endpoints
-## Hoteles
+## Endpoints
+### Hoteles
 - GET /hoteles: Lista los hoteles disponibles.
 - POST /hoteles: Crea un nuevo hotel.
 - PUT /hoteles/{id}: Modifica un hotel existente.
 - DELETE /hoteles/{id}: Elimina un hotel.
-## Vuelos
-GET /vuelos: Lista los vuelos con plazas disponibles.
-POST /vuelos: Crea un nuevo vuelo.
-PUT /vuelos/{id}: Modifica un vuelo existente.
-DELETE /vuelos/{id}: Elimina un vuelo.
-Reservas
-GET /reservas: Lista todas las reservas.
-POST /reservas: Crea una nueva reserva.
-PUT /reservas/{id}: Modifica una reserva existente.
-DELETE /reservas/{id}: Elimina una reserva.
-Ejecución
+### Vuelos
+- GET /vuelos: Lista los vuelos con plazas disponibles.
+- POST /vuelos: Crea un nuevo vuelo.
+- PUT /vuelos/{id}: Modifica un vuelo existente.
+- DELETE /vuelos/{id}: Elimina un vuelo.
+### Reservas
+- GET /reservas: Lista todas las reservas.
+- POST /reservas: Crea una nueva reserva.
+- PUT /reservas/{id}: Modifica una reserva existente.
+- DELETE /reservas/{id}: Elimina una reserva.
+### Ejecución
 Clona el repositorio y abre el proyecto en tu IDE.
 Asegúrate de que el archivo agencia.sql esté en la ruta src/main/java/Agencia/.
 Configura la base de datos en application.properties.
